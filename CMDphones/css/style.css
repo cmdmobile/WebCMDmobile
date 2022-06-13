@@ -5,11 +5,13 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
   }
+ 
   .container{
     /* căn giữa thanh header */
-    max-width: 1000px;
+    max-width: auto;
     margin: auto;
     padding: 0 10px 0 10px;
+    
   }
   header{
     background-color: #6DD4FF;
@@ -387,14 +389,24 @@ li{
     margin: 0 auto;
 }
 .headline{
+    text-align: center;
+    margin: 5px 0px;
+    font-weight: 2000;
+    padding-top: 30px;
+    text-transform: uppercase;
+    font-family: Arial;
+}
+.headline1{
     text-align: left;
     margin: 5px 0px;
     color: #555; 
     font-weight: 2000;
+    text-transform: uppercase;
+    font-family: Arial;
 }
 .headline h3{
     font-size: 22px;
-    color: #140a0a;
+    color: #df1458;
     line-height: 40px;
     padding: 10px 10px;
     text-transform: uppercase;
@@ -410,11 +422,11 @@ ul.products{
     padding: 30px 30px;
 }
 ul.products li{
-    flex-basis: 15%;
+    flex-basis: 19%;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
-    border: 8px solid #46c5fb;
+    border: 5px solid #46c5fb;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
@@ -423,6 +435,7 @@ ul.products li{
     font-family: Arial;
     color: #111;
     line-height: 1.15;
+    
 }
 ul.products li img{
     max-width: 100%;
@@ -451,7 +464,7 @@ ul.products li .product-top a.muangay{
     bottom: -34px;
     transition: 0.3s ease-in-out;
     /* hiệu ứng */
-    opacity: 1;
+    opacity: 0.85;
     /*  */
 }
 ul.products li:hover a.muangay{
@@ -516,7 +529,7 @@ ul.products li .product-info .product-gia a{
   color: #140a0a;
   line-height: 40px;
   padding: 10px 10px;
-  text-transform: uppercase;
+  text-transform: uppercase;  
   display: inline-block;
   font-weight: 600;
   font-family: Arial;
