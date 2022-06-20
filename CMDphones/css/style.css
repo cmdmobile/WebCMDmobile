@@ -365,6 +365,7 @@ li{
 }
 #wrapper{
     max-width: 1400px;
+
     margin: 0 auto;  
 }
 #wrapperbosung{
@@ -451,25 +452,31 @@ ul.products li .product-top .product-hienthi img{
 ul.products li:hover .product-top .product-hienthi{
     filter: opacity(50%);
 }
-ul.products li .product-top a.muangay{
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    display: block;
-    color: white;
-    background-color: #6DD4FF;
-    padding: 8px 0px;
-    position: absolute;
-    width: 100%;
-    bottom: -34px;
-    transition: 0.3s ease-in-out;
-    /* hiệu ứng */
-    opacity: 0.85;
-    /*  */
+.product-item{
+  width: 100%;
 }
-ul.products li:hover a.muangay{
-    bottom: 0px;
+ul li .product-item .muangay{
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  color: white;
+  background-color: #6DD4FF;
+  padding: 8px 0px;
+  position: relative;
+  border: 0;
+  width: 100%;
+  bottom: -9px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  /* hiệu ứng */
+  opacity: 0.85;
+  /*  */
 }
+ul.products li:hover .muangay{
+    bottom: 10px;
+}
+
 ul.products li .product-info{
     padding: 10px 0px;
     text-align: left;
@@ -491,13 +498,15 @@ ul.products li .product-info a.product-loai{
 ul.products li .product-info a.product-ten{
     color: black;
     padding: 3px 0px;
-    display: block;    
+    display: block;
+       
 }
-ul.products li .product-info .product-gia a{
+ul.products li .product-info .product-gia p{
     color: rgb(226, 19, 19);
     padding: 3px 0px;
     font-weight: 1000;
 }
+/* -------slider--- */
 .slider-bottom{
   position: relative;
 }
@@ -594,6 +603,57 @@ ul.products li .product-info .product-gia a{
   height: auto;
   width: 100%;
   border-radius: 10px;
+}
+/* ------------cart gio hang--- */
+.cart{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding-top: 30px;
+}
+.cart h2{
+  margin-bottom: 20px;
+  font-family: Arial;  
+}
+.cart table{
+  width: 100%;
+}
+.cart table thead tr th:first-child {
+  text-align: left;
+}
+.cart table  tr td{
+  border-bottom: 1px solid #ddd;
+  padding: 12px 0;
+}
+.cart table thead tr th:last-child{
+  text-align: right;
+}
+.cart table thead tr td:last-child{
+  text-align: right;
+}
+/* ---------------style cho cart nằm bên phải------ */
+.cart{
+  position: fixed;
+  height: 100vh;
+  width: 500px;
+  right: 0;
+  top:0;
+  background-color: #46c5fb;
+  padding:12px 20px;
+  /* tránh tình trạng sản phẩm tràn xuống dưới */
+  overflow: scroll;
+  right: -100%;
+  z-index: 10000000;
+  transition: all 0.3s ease;
+}
+.cart button{
+  margin-top: 12px;
+  height: 30px;
+  padding: 0 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  
 }
 /* -----------------------footer-------------- */
 *{
