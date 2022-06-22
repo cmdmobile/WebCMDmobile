@@ -478,4 +478,27 @@
     display: flex;
     justify-content: center;
   }
-  
+  .dangnhap >ul>li:hover a{
+    height: 30px;
+    padding: 0 2px;
+    cursor: pointer;
+    background-color: #6DD4FF;
+    color: #00008B;
+    list-style: none;
+    text-decoration: none;
+  }
+  .dangnhap >ul>li{
+    height: 40px;
+    padding: 0 2px;
+    cursor: pointer;
+    color: #00008B;
+    list-style: none;
+    text-decoration: none;
+    width: 20%;
+  }
+  .dangnhap a{
+
+    cursor: pointer;
+    color: #00008B;
+    list-style: none;
+  }

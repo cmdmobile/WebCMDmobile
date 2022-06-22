@@ -36,7 +36,7 @@
   }
   nav ul li, a{
     color: #00008B;
-    font-size: 15px;
+    font-size: 13px;
     text-align: center;
   }
   .timkiem i{
@@ -198,7 +198,7 @@
     border-top-left-radius: 5px;
   }
   /* Khi hover đến li, tô màu cho thẻ a */
-  nav ul li:hover>a{
+  nav ul li:hover>a{  
     background: rgb(90, 197, 221);
     /* opacity: .7; */
     color: white;
@@ -728,4 +728,28 @@ ul li a {
 .footer-bottom-bottom-bottom{
   display: flex;
   justify-content: center;
+}
+.dangnhap >ul>li:hover a{
+  height: 30px;
+  padding: 0 2px;
+  cursor: pointer;
+  background-color: #6DD4FF;
+  color: #00008B;
+  list-style: none;
+  text-decoration: none;
+}
+.dangnhap >ul>li{
+  height: 40px;
+  padding: 0 2px;
+  cursor: pointer;
+  color: #00008B;
+  list-style: none;
+  text-decoration: none;
+  width: 20%;
+}
+.dangnhap a{
+
+  cursor: pointer;
+  color: #00008B;
+  list-style: none;
 }
