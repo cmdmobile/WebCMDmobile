@@ -100,7 +100,8 @@
                 </div>
                 <nav class="menu">
                     <ul>
-                        <li><a href="/html/index.html" title="Điện thoại"><i class="fa-solid fa-mobile-screen-button"></i> Trang chủ</a>
+                        <li><a href="/html/index.html" title="Điện thoại"><i
+                                    class="fa-solid fa-mobile-screen-button"></i> Trang chủ</a>
                             <!-- menu con sổ xuống cấp 1 -->
                             <ul>
                                 <li>
@@ -264,12 +265,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="note">Chú ý: <i>Bảo hành một năm -Freeship trong bán kính 2km & Thanh toán sau khi nhận
+                                <div class="note">Chú ý: <i>Bảo hành một năm -Freeship trong bán kính 2km & Thanh toán
+                                        sau khi nhận
                                         hàng(Tiền mặt hoặc chuyển khoản trước)</i></div>
                                 <div class="Khungmua themvaogiohang">
                                     <div class="NutMua">
-                                        <a href="/cart.html"><button class="nut nuthemvaogiohang">Chọn
-                                                mua</button></a>
+                                        <button class="thanhtoanngay">Mua Ngay</button>
                                     </div>
                                 </div>
                             </div>
@@ -279,6 +280,53 @@
             </div>
         </div>
     </div>
+    <!-- -----form đặt hàng -->
+    <div class="thanhtoan">
+        <div class="thanhtoan-content">
+            <h2>Chọn địa chỉ Nhận hàng <span id="adress-close"><i class="fa-solid fa-rectangle-xmark"></i>Đóng</span>
+            </h2>
+            <form action="">
+                <input type="text" placeholder="Nhập tên đầy đủ:">
+                <input type="text" placeholder="Số điện thoại:">
+                <input type="text" placeholder="Số nhà, Tên đường">
+                <input type="text" placeholder="Thêm ghi chú:">
+                <select name="" id="">
+                    <option value="#">--Chọn Màu</option>
+                    <option value="#">Trắng</option>
+                    <option value="#">Đen</option>
+                </select>
+                <select name="" id="">
+                    <option value="#">--Chọn Tỉnh,Thành phố</option>
+                    <option value="#">Hà Nội</option>
+                    <option value="#">Hồ Chí Minh</option>
+                </select>
+                <select name="" id="">
+                    <option value="#">--Chọn Quận-Huyện</option>
+                    <option value="#">Hoàng Mai</option>
+                </select>
+                <select name="" id="">
+                    <option value="#">--Chọn Phường-Xã</option>
+                    <option value="#">Hoàng Liệt</option>
+                </select>
+
+
+                <Button>Xác nhận</Button>
+            </form>
+        </div>
+    </div>
+    <script>
+        const adressbtn = document.querySelector('.thanhtoanngay')
+        const adressclose = document.querySelector('#adress-close')
+        console.log(adressclose)
+
+        // thêm sự kiện click cho Hà Nội và nút close
+        adressbtn.addEventListener("click", function () {
+            document.querySelector('.thanhtoan').style.display = "flex";
+        })
+        adressclose.addEventListener("click", function () {
+            document.querySelector('.thanhtoan').style.display = "none";
+        })
+    </script>
     <!-- footer -->
     <div class="footer">
         <div class="footer-top-full">
@@ -484,7 +532,8 @@
         </div>
 
     </div>
-    <script src="/js/chitietsp.js"></script>
+
+  
 </body>
 
 </html>

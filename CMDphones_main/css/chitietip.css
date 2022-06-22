@@ -243,7 +243,7 @@ nav > ul li > ul li >ul{
   margin-left:310px;
   margin-top: -50px;
 }
-/* --------------adress-form------------ */
+/* --------------thanhtoan-form------------ */
 .adress-form{
   position: fixed;
   /* độ rộng toàn màn hình */
@@ -260,7 +260,7 @@ nav > ul li > ul li >ul{
   display: none;
   z-index: 999;
 }
-.adress-form-content{
+.thanhtoan-content{
   font-family: Arial, Helvetica, sans-serif;
   width: 450px;
   height: 450px;
@@ -269,17 +269,17 @@ nav > ul li > ul li >ul{
   display: block;
   margin: 0 12px;
 }
-.adress-form-content form{
+.thanhtoan-content form{
   padding: 12px 40px;
 
 }
-.adress-form-content h2{
+.thanhtoan-content h2{
   font-size: 14px;
   padding: 12px 0;
   border-bottom: 1px solid #ddd;
   position: relative;
 }
-.adress-form-content h2 span{
+.thanhtoan-content h2 span{
   display: block;
   position: absolute;
   width: 80px;
@@ -296,16 +296,16 @@ nav > ul li > ul li >ul{
   transform: translateY(-50%);
   line-height: 30px;
 }
-.adress-form-content form input,select{
+.thanhtoan-content form input,select{
   height: 40px;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 10px;
   display: block;
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 6px;
 }
-.adress-form-content form button{
+.thanhtoan-content form button{
   margin-top: 20px;
   height: 40px;
   width: 80%;
@@ -316,7 +316,7 @@ nav > ul li > ul li >ul{
   color: white;
   font-size: large;
 }
-.adress-form-content form button:hover{
+.thanhtoan-content form button:hover{
   background-color: #FFB700;
 }
 /* ----------------------------BODY-------------------------- */
@@ -420,7 +420,84 @@ margin: auto;
 border-top: 1px solid #ddd;
 border-bottom: 1px solid #ddd;
 }
+/* Formthanhtoan */
 
+.thanhtoan{
+  position: fixed;
+  /* độ rộng toàn màn hình */
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.8);
+  top: 0;
+  left: 0;
+  /* cho form vao giua man hinh */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: none;
+  z-index: 999;
+}
+.thanhtoan-content{
+  font-family: Arial, Helvetica, sans-serif;
+  width: 450px;
+  height: 450px;
+  background-color: white;
+  border-radius: 7px;
+  display: block;
+  margin: 0 12px;
+}
+.thanhtoan-content form{
+  padding: 12px 40px;
+
+}
+.thanhtoan-content h2{
+  font-size: 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+.thanhtoan-content h2 span{
+  display: block;
+  position: absolute;
+  width: 80px;
+  height: 30px;
+  padding: 0 6px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #00008B;
+  right: 12px;
+  /* đổi con trỏ chuột khi chỉ vào */
+  cursor: pointer;
+  /* cho nút close ra giữa */
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 30px;
+}
+.thanhtoan-content form input,select{
+  height: 35px;
+  width: 100%;
+  margin-top: 5px;
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+}
+.thanhtoan-content form button{
+  margin-top: 20px;
+  height: 40px;
+  width: 80%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #46c5fb;
+  cursor: pointer;
+  color: white;
+  font-size: large;
+}
+.thanhtoan-content form button:hover{
+  background-color: #FFB700;
+}
+/* ------------------- */
 ul{
 list-style: none;
 padding: 0;
@@ -675,12 +752,12 @@ ul.products li:hover .muangay{
   flex: 1 1 0%;
   display: flex;
 }
-.Right .themvaogiohang .nut.nuthemvaogiohang {
+.Right .themvaogiohang .thanhtoanngay {
   color: rgb(255, 255, 255);
   background-color: rgb(255, 57, 69);
   margin-top: 15px;
 }
-.Right .themvaogiohang .nut {
+.Right .themvaogiohang .thanhtoanngay {
   cursor: pointer;
   display: flex;
   -webkit-box-align: center;
@@ -699,10 +776,10 @@ ul.products li:hover .muangay{
   border-radius: 4px;
   outline: none;
 }
-.NutMua a{
+.NutMua button{
 text-decoration: none;
 }
-.NutMua a:hover{
+.NutMua button:hover{
 text-decoration: none;
 }
 /* footer */
