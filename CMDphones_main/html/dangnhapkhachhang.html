@@ -44,7 +44,7 @@
                     <span class="login100-form-title">
                         ĐĂNG NHẬP KHÁCH HÀNG WEBSITE CMD
                     </span>
-                    <form action="/html/index.html">
+                    <form action="/html/trangchu.html">
                     <div class="wrap-input100 validate-input"
                         data-validate="Bạn cần nhập đúng thông tin như: ex@abc.xyz">
                         <input class="input100" type="text" placeholder="Tài Khoản" name="username" id="username">
@@ -79,7 +79,7 @@
                     <span class="txt1">
                         Đăng nhập với tư cách
                     </span>
-                    <a class="txt2" href="/QUANTRI-CMD/indexloginadmin.html">
+                    <a class="txt2" href="/QUANTRI-CMD/dangnhapquantri.html">
                         Admin?
                     </a>
                 </div>
@@ -115,7 +115,7 @@
         //Set 1 Admin ảo để đăng nhập quản trị
         if (username == "customer" && password == "123456789") {
             swal("Thành Công!", "Bạn Đã Đăng Nhập Với Tư Cách Khách Hàng Của CMDphones", "success");
-            window.location = "indexcmember.html";
+            window.location = "cmember.html";
             return true;
         }
         //Nếu không nhập gì mà nhấn đăng nhập thì sẽ báo lỗi
